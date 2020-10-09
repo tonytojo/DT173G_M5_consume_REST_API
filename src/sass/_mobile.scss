@@ -1,0 +1,47 @@
+//Media query
+@media screen and (max-width: 900px) 
+{
+  .tblpost
+  {
+    width:700px;
+  }
+} /* End media query max 600px */
+
+@media screen and (max-width: 730px) 
+{
+  .tblpost
+  {
+    width:600px;
+  }
+}
+
+@media screen and (max-width: 660px) 
+{
+  form
+  {
+    width:100%;
+    border:none;
+    padding:0;
+    margin:0;
+  }
+
+  label, legend { margin-left: 5px; }
+
+  .col-25, .col-75, input[type=submit],.reset 
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  input[type=submit],.reset 
+  {
+    font-size:1.2em;
+  }
+
+  .tblpost
+  {
+    width:450px;
+  }
+}
+
+

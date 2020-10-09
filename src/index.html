@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DT173G Moment 5 REST-webbtjänster</title>
+   <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+   <header>
+      <h1>DT173G Moment 5 REST-webbtjänster</h1>
+   </header>
+
+   <h2>Kurser jag läst</h2>
+
+   <div class="container">
+      <table id="sources" class="tblpost">
+      </table>
+   
+
+   <h2>Lägg till kurs</h2>
+
+   
+      <form id="myform">
+         <!--  Input Kurskod -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="code">Kurskod</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="code" name="code">
+            </div>
+         </div>
+
+         <!--  Input Kursnamn -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="name">Kursnamn</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="name" name="name">
+            </div>
+         </div>
+
+         <!-- Input Progression -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="progression">Progression</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="progression" name="progression">
+            </div>
+         </div>
+
+         <!-- Input Kursplan -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="plan">Kursplan</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="plan" name="plan">
+            </div>
+         </div>
+
+         <div class="rad">
+            <input id="addCourse" type="submit" value="Lägg till kurs">
+            <input class="reset" type="reset" value="Reset">
+         </div>
+      </form>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>

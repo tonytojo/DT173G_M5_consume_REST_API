@@ -1,0 +1,43 @@
+//Some useful variables
+$form-bgcolor : #d9d9d9;
+$linkbtn-bgcolor : #0082f0;
+$linkbtn-fgcolor :#fff;
+
+label 
+{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+h1
+{
+   margin-bottom: 20px;
+}
+
+
+h1,h2
+{
+   text-align: center;
+}
+
+//Set text color based om background so it wil be readable
+//A function that make make contrast between fg and bg
+@function setTextColor($color)
+{
+   @if(lightness($color) > 70)
+   {
+      @return darken($color,55%);
+   }
+   @else
+   {
+      @return lighten($color,55%);
+   }
+}
+
+//Set background-color and text color
+@mixin setBackground($color)
+{
+   background-color: $color;
+   color:setTextColor($color); //Pass in background-color
+}
+
