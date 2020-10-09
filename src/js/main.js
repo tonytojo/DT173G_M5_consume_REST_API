@@ -75,7 +75,6 @@ function deleteCource(id)
 //When I update I must extract the href in a special way to make it work
 function updateCource(id)
 {
-   console.log("Start update");
    arrCourse = [];
    let a_href;
    let count = 0;
